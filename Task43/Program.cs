@@ -8,11 +8,15 @@ using static System.Console;
 Clear();
 
 Write("Введите b1:   ");
-int b1=int.Parse(ReadLine());
+double b1=int.Parse(ReadLine());
 Write("Введите k1:   ");
-int k1=int.Parse(ReadLine());
+double k1=int.Parse(ReadLine());
 Write("Введите b2:   ");
-int b2=int.Parse(ReadLine());
+double b2=int.Parse(ReadLine());
 Write("Введите k2:   ");
-int k2=int.Parse(ReadLine());
+double k2=int.Parse(ReadLine());
+
+var x= (b2 - b1)/(k1 - k2);
+ 
+WriteLine($"Точка пересечения: ({x};{k1*x + b1})");
 
